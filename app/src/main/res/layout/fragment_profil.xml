@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->\
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_below="@id/foto"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:layout_centerInParent="true"
+            android:text="Email :" />
+
+        <EditText
+            android:id="@+id/isie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerInParent="true"
+            android:hint="Email" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isie"
+            android:layout_centerInParent="true"
+            android:text="Phone : " />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_centerInParent="true"
+            android:hint="Phone Number" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number"
+            android:layout_marginStart="100dp"
+            android:text="EDIT PROFILE" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number"
+            android:layout_toRightOf="@id/edit"
+            android:layout_centerInParent="true"
+            android:text="LOGOUT" />
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

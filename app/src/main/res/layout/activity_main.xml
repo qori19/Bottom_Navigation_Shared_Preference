@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@id/foto"
+        android:textSize="35sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="145sp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="Login"
+        android:textSize="17sp"
+        android:textColor="@color/design_default_color_primary_dark"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_toRightOf="@id/btn_login"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="Daftar"
+        android:textSize="17sp"
+        android:textColor="@color/design_default_color_primary_dark"/>
+</RelativeLayout>
